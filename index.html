@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise - Interactive Budget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SpendWise 💰</h1>
+    <p>Smart Budget Tracker</p>
+
+    <div class="card">
+      <label>Monthly Budget (KSH)</label>
+      <input type="number" id="budgetInput" placeholder="e.g. 50000">
+      <button id="setBudgetBtn">Set Budget</button>
+    </div>
+
+    <div class="card">
+      <h3>Add Expense</h3>
+      <input type="text" id="expenseName" placeholder="Expense name e.g. Rent">
+      <input type="number" id="expenseAmount" placeholder="Amount e.g. 15000">
+      <button id="addExpenseBtn">Add Expense</button>
+    </div>
+
+    <div id="dashboard" class="card dashboard">
+      <h2>Dashboard</h2>
+      <p id="budgetDisplay">Budget: KSH 0</p>
+      <p id="totalDisplay">Total Expenses: KSH 0</p>
+      <p id="balanceDisplay">Remaining: KSH 0</p>
+      <p id="statusDisplay" class="status"></p>
+      
+      <h3>Expenses List</h3>
+      <ul id="expenseList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
